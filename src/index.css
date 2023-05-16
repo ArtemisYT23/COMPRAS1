@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --PrimaryColor: #4c607f;
+  --ColorWhite: #fff;
+  /* --CentralColor: #f68a20;  */
+  --SecondColor: #c4c4c4;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+  background-image: url("../assets/Fondos/fondoComex.png"); 
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: var(--ColorWhite);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--PrimaryColor);
+  border-radius: 0.5rem;
+};
+
+body::-webkit-scrollbar-thumb:hover,
+  body::-webkit-scrollbar-thumb:active {
+    background-color: var(--SecondColor);
+  }
+
+  @media screen and (min-width: 720px) {
+    body::-webkit-scrollbar {
+      background-color: var(--PrimaryColor);
+    }
+    body::-webkit-scrollbar-thumb {
+      background-color: var(--ColorWhite);
+    }
+  }
